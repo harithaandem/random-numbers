@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>GRID SELECTOR</title>
+        <h1>random numbers</h1>
+        <link href="Assg1.css">
+    </head>
+    <body style="background-color:powderblue;">
+    
+        
+<div style="transform: translate(50%);">
+    <div>
+         <input type=button onclick="random(value)" id=button1 value=1></input>
+         <input type=button onclick="random(value)" id=button2 value=2></input>
+         <input type=button onclick="random(value)" id=button3 value=3></input>
+    </div>
+    <div>
+         <input type=button onclick="random(value)" id=button4 value=4></input>
+         <input type=button onclick="random(value)" id=button5 value=5></button>
+         <input type=button onclick="random(value)" id=button6 value=6></input>
+    </div>
+    <div>
+         <input type=button onclick="random(value)" id=button7 value=7></input>
+         <input type=button onclick="random(value)" id=button8 value=8></input>
+         <input type=button onclick="random(value)" id=button9 value=9></input>
+    </div>
+   <button onclick="myFunction()">start game</button>
+   <button onclick="myFunction()">newgame</button>
+</div>
+     <script>
+         var x=[],i;
+         var num=Math.floor((Math.random() * 10)-1);
+         function myFunction() {
+             for(i=0;i<9;i++){
+           x[i] = Math.floor((Math.random() * 10) + 1);
+          document.getElementById("button"+(i+1)).value=x[i];
+         }
+             
+}
+         function random(number){
+             if(number>x[num])
+                 {
+                     alert("greater");
+                 }
+             else if(number<x[num]){
+                 alert("smaller");
+             }
+             else{
+                 alert("success");
+             }
+         }
+
+    
+        </script>
+    
+    </body>
+    
+    
+    
+</html>

@@ -1,0 +1,38 @@
+
+
+<html>
+<body>
+    <script>
+        var count=0;
+        var x=[];
+     while(count<10)
+    {
+    var p=Math.floor((Math.random() * 10) + 1);
+        if(count==0)
+        {
+            x[count]=p;
+            count++;
+            continue;
+        }
+    
+    for(var j=0;j<count;j++)
+     {
+    if(p===x[j])
+        {
+            break;
+        }
+        
+    }
+        if(j===count)
+            {
+                x[count]=p;
+                count++;
+            }
+    }
+        for(i=0;i<9;i++)
+            {
+                console.log(x[i]);
+            }
+    </script>
+        </body>
+</html>

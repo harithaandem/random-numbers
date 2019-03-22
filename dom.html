@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>FLEX ITEM SELECTOR</title>
+        <h1 align="center">SELECT NUMBER</h1>
+        <br>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <style>
+        .container {
+              display: flex;
+              width:300px;
+              height:300px;
+              flex-flow: row wrap;
+              align-items: space-between;
+               }
+        .item {
+              width:100px;
+              height:100px;
+              flex-basis:33%;
+              border: 1px solid #c3c3c3;
+              text-align: center;
+              background-color: coral;
+              font-size: 30px;
+              }
+            .button {width:135px;
+            background-image: url("pic.gif");
+            transform: translateX(350%)}
+            .body {background-image: url("pic1.jpg");
+                background-size:     cover;                     
+                background-repeat:   no-repeat;
+                background-position: center center;              
+}
+        </style>
+    </head>
+    <body class="body">
+<div>
+<div class="container" id="cont" >
+  
+</div>
+    <br>
+        <button class="button" onclick="newgam()" >new game</button>
+        </div>
+        <script src=styledom.js ></script>
+    </body>
+    </html>

@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>FLEX ITEM SELECTOR</title>
+        <h1 align="center">SELECT NUMBER</h1>
+        <br>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <style>
+        .container {
+              display: flex;
+              width:300px;
+              height:300px;
+              flex-flow: row wrap;
+              align-items: space-between;
+               }
+        .item {
+              width:100px;
+              height:100px;
+              flex-basis:33%;
+              border: 1px solid #c3c3c3;
+              text-align: center
+              }
+            .button {width:135px;
+            background-image: url("pic.gif");
+            transform: translateX(350%)}
+            .body {background-image: url("pic1.jpg");
+                background-size:     cover;                     
+                background-repeat:   no-repeat;
+                background-position: center center;              
+}
+        </style>
+    </head>
+    <body class="body">
+<div>
+<div class="container">
+  <div class="item" id="id1" onclick="random(x[0])" style="background-color:coral;">1</div>
+  <div class="item" id="id2" onclick="random(x[1])" style="background-color:coral;">2</div>
+  <div class="item" id="id3" onclick="random(x[2])" style="background-color:coral;">3</div>  
+  <div class="item" id="id4" onclick="random(x[3])" style="background-color:coral;">4</div>
+  <div class="item" id="id5" onclick="random(x[4])" style="background-color:coral;">5</div>
+  <div class="item" id="id6" onclick="random(x[5])" style="background-color:coral;">6</div>  
+  <div class="item" id="id7" onclick="random(x[6])" style="background-color:coral;">7</div>
+  <div class="item" id="id8" onclick="random(x[7])" style="background-color:coral;">8</div>
+  <div class="item" id="id9" onclick="random(x[8])" style="background-color:coral;">9</div>  
+</div>
+    <br>
+        <button class="button" onclick="myFunction()">new game</button>
+        </div>
+        <script src=styleab.js></script>
+    </body>
+    </html>

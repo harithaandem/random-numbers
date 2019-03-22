@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>GRID SELECTOR</title>
+        <h1>random numbers</h1>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <style>
+        .grid-container {
+              display: grid;
+              grid-template-columns: auto auto auto;
+              background-color: #2196F3;
+              padding: 10px;
+            transform: translateX(140%);
+            width: 300px;
+               }
+        .grid-item {
+              background-color: rgba(255, 255, 255, 0.8);
+              border: 1px solid rgba(0, 0, 0, 0.8);
+              padding: 20px;
+              font-size: 30px;
+              text-align: center;
+              }
+            .button {width:150px;
+            transform: translateX(350%)}
+        </style>
+    </head>
+    <body style="background-color:powderblue;">
+<div>
+<div class="grid-container">
+  <div class="grid-item" id="id1" onclick="random(x[0])">1</div>
+  <div class="grid-item" id="id2" onclick="random(x[1])">2</div>
+  <div class="grid-item" id="id3" onclick="random(x[2])">3</div>  
+  <div class="grid-item" id="id4" onclick="random(x[3])">4</div>
+  <div class="grid-item" id="id5" onclick="random(x[4])">5</div>
+  <div class="grid-item" id="id6" onclick="random(x[5])">6</div>  
+  <div class="grid-item" id="id7" onclick="random(x[6])">7</div>
+  <div class="grid-item" id="id8" onclick="random(x[7])">8</div>
+  <div class="grid-item" id="id9" onclick="random(x[8])">9</div>  
+</div>
+    <br>
+        <button class="button" onclick="myFunction()">new game</button>
+        </div>
+        <script src=styleab.js></script>
+    </body>
+    </html>
